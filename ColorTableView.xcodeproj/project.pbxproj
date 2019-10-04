@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1F986F0E23465B2B00EFB617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F986F0D23465B2B00EFB617 /* AppDelegate.swift */; };
-		1F986F1023465B2B00EFB617 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F986F0F23465B2B00EFB617 /* ViewController.swift */; };
 		1F986F1323465B2B00EFB617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F986F1123465B2B00EFB617 /* Main.storyboard */; };
 		1F986F1523465B2E00EFB617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F986F1423465B2E00EFB617 /* Assets.xcassets */; };
 		1F986F1823465B2E00EFB617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F986F1623465B2E00EFB617 /* LaunchScreen.storyboard */; };
 		1F986F2323465B2E00EFB617 /* ColorTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F986F2223465B2E00EFB617 /* ColorTableViewTests.swift */; };
 		1F986F2E23465B2E00EFB617 /* ColorTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F986F2D23465B2E00EFB617 /* ColorTableViewUITests.swift */; };
+		1F986F3C2347C68F00EFB617 /* ColorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F986F3B2347C68F00EFB617 /* ColorTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		1F986F0A23465B2B00EFB617 /* ColorTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F986F0D23465B2B00EFB617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F986F0F23465B2B00EFB617 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F986F1223465B2B00EFB617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F986F1423465B2E00EFB617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F986F1723465B2E00EFB617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		1F986F2923465B2E00EFB617 /* ColorTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F986F2D23465B2E00EFB617 /* ColorTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewUITests.swift; sourceTree = "<group>"; };
 		1F986F2F23465B2E00EFB617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F986F3B2347C68F00EFB617 /* ColorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				1F986F0D23465B2B00EFB617 /* AppDelegate.swift */,
-				1F986F0F23465B2B00EFB617 /* ViewController.swift */,
 				1F986F1123465B2B00EFB617 /* Main.storyboard */,
 				1F986F1423465B2E00EFB617 /* Assets.xcassets */,
 				1F986F1623465B2E00EFB617 /* LaunchScreen.storyboard */,
 				1F986F1923465B2E00EFB617 /* Info.plist */,
+				1F986F3B2347C68F00EFB617 /* ColorTableViewController.swift */,
 			);
 			path = ColorTableView;
 			sourceTree = "<group>";
@@ -256,8 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F986F1023465B2B00EFB617 /* ViewController.swift in Sources */,
 				1F986F0E23465B2B00EFB617 /* AppDelegate.swift in Sources */,
+				1F986F3C2347C68F00EFB617 /* ColorTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
