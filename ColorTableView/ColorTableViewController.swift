@@ -10,13 +10,16 @@ import UIKit
 
 class ColorTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var colors: [String: UIColor] = ["red":UIColor.red,
-                  "orange":UIColor.orange,
-                  "yellow":UIColor.yellow,
-                  "green":UIColor.green,
-                  "blue":UIColor.blue,
-                  "purple":UIColor.purple,
-                  "brown":UIColor.brown]
+    @IBOutlet weak var colorTableView: UITableView!
+    
+    var colors: [(String, UIColor)] = [("red",UIColor.red),
+                  ("orange",UIColor.orange),
+                  ("yellow",UIColor.yellow),
+                  ("green",UIColor.green),
+                  ("blue",UIColor.blue),
+                  ("purple",UIColor.purple),
+                  ("brown",UIColor.brown)]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,20 +36,22 @@ class ColorTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "colorCell", for: indexPath)
-        let title = Array(colors.keys)[indexPath.row]
-        let color = Array(colors.values)[indexPath.row]
+        let title = colors[indexPath.row].0
+        let color = colors[indexPath.row].1
         cell.textLabel?.text = title
         cell.backgroundColor = color
         return cell
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.isSelected = false
     }
-    */
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let destination = segue.destination as? ColorDetailViewController,
+                let row = colorTableView.indexPathForSelectedRow?.row {
+                 destination.color = colors[row]
+                }
+                }
+        }
 
-}

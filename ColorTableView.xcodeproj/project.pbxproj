@@ -14,6 +14,7 @@
 		1F986F2323465B2E00EFB617 /* ColorTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F986F2223465B2E00EFB617 /* ColorTableViewTests.swift */; };
 		1F986F2E23465B2E00EFB617 /* ColorTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F986F2D23465B2E00EFB617 /* ColorTableViewUITests.swift */; };
 		1F986F3C2347C68F00EFB617 /* ColorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F986F3B2347C68F00EFB617 /* ColorTableViewController.swift */; };
+		1FD209752363ABDF00CDB7B8 /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD209742363ABDF00CDB7B8 /* ColorDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1F986F2D23465B2E00EFB617 /* ColorTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewUITests.swift; sourceTree = "<group>"; };
 		1F986F2F23465B2E00EFB617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F986F3B2347C68F00EFB617 /* ColorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewController.swift; sourceTree = "<group>"; };
+		1FD209742363ABDF00CDB7B8 /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1F986F1623465B2E00EFB617 /* LaunchScreen.storyboard */,
 				1F986F1923465B2E00EFB617 /* Info.plist */,
 				1F986F3B2347C68F00EFB617 /* ColorTableViewController.swift */,
+				1FD209742363ABDF00CDB7B8 /* ColorDetailViewController.swift */,
 			);
 			path = ColorTableView;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD209752363ABDF00CDB7B8 /* ColorDetailViewController.swift in Sources */,
 				1F986F0E23465B2B00EFB617 /* AppDelegate.swift in Sources */,
 				1F986F3C2347C68F00EFB617 /* ColorTableViewController.swift in Sources */,
 			);
